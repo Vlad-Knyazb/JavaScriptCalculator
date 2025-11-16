@@ -1,5 +1,5 @@
 var a = String ("Hello")
-var b = Number(42)  
+var b = Number(200)  
 var c
   
 console.log(typeof a)
