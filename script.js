@@ -1,114 +1,211 @@
-// HomeWork_7
+// function sayHello(name = "") {
+//   console.log("Hello" + name)
+// }
 
-const orders = [
-  {
-    id: 1,
-    customer: "Jhon",
-    items: [
-      { name: "Ноутбук",  price: 50000, quantity: 1 },
-      { name: "Мышь",     price: 1500,  quantity: 2 }
-    ]
-  },
-  {
-    id: 2,
-    customer: "Alan",
-    items: [
-      { name: "Телефон", price: 30000, quantity: 1 },
-      { name: "Чехол",   price: 1000,  quantity: 3 }
-    ]
-  },
-  {
-    id: 3,
-    customer: "Jane",
-    items: [
-      { name: "Клавиатура", price: 2500,  quantity: 1 },
-      { name: "Монитор",    price: 12000, quantity: 1 }
-    ]
-  }
-];
+// sayHello("user1")
+// sayHello("user2")
+// sayHello("user3")
+// sayHello()
 
-console.log("Сумма заказов: ");
-for (var i = 0; i < orders.length; i++) {
-  var order = orders[i];
-  var orderSum = 0;
+
+
+// function sum (a, b) {
+//   if (a > 0 && b > 0) {
+//     return a + b
+//   } else (
+//     return 0
+//   )
+// }
+
+
+// function loop(count) {
+//   for (var i = 0; i < count; i++) {
+//     var result = sum(1, i)
+//     console.log(result)
+//   }
+// }
+
+// loop(4)
+
+
+
+// var showAlert = function() {
+//   console.log("ALERT")
+// }
+
+// var obj = {
+//   index: 10,
+//   a: "string",
+//   fun: function () {
+//     console.log("ALERT")
+//   },
+// }
+
+// obj.fun()
+
+// console.log(obj)
+
+
+// var signal = `red` // `green`, `yellow`
+
+// var actions = {
+//   red: function () {
+//     console.log("STOP")
+//   },
+//   yellow: function () {
+//     console.log("WAITING")
+//   },
+//   green: function () {
+//     console.log("GO")
+//   },
+// }
+
+// actions[signal]()
+
+
+
+
+
+var sum = 0
+
+function calcSum() {
+  sum++
+}
+
+calcSum()
+calcSum()
+calcSum()
+calcSum()
+
+console.log(sum)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// // HomeWork_7
+
+// const orders = [
+//   {
+//     id: 1,
+//     customer: "Jhon",
+//     items: [
+//       { name: "Ноутбук",  price: 50000, quantity: 1 },
+//       { name: "Мышь",     price: 1500,  quantity: 2 }
+//     ]
+//   },
+//   {
+//     id: 2,
+//     customer: "Alan",
+//     items: [
+//       { name: "Телефон", price: 30000, quantity: 1 },
+//       { name: "Чехол",   price: 1000,  quantity: 3 }
+//     ]
+//   },
+//   {
+//     id: 3,
+//     customer: "Jane",
+//     items: [
+//       { name: "Клавиатура", price: 2500,  quantity: 1 },
+//       { name: "Монитор",    price: 12000, quantity: 1 }
+//     ]
+//   }
+// ];
+
+// console.log("Сумма заказов: ");
+// for (var i = 0; i < orders.length; i++) {
+//   var order = orders[i];
+//   var orderSum = 0;
   
-  for (var j = 0; j < order.items.length; j++) {
-    var item = order.items[j];
-    orderSum += item.price * item.quantity;
-  }
+//   for (var j = 0; j < order.items.length; j++) {
+//     var item = order.items[j];
+//     orderSum += item.price * item.quantity;
+//   }
   
-  console.log(`Заказ ${order.id} (${order.customer}): ${orderSum} $`);
-}
+//   console.log(`Заказ ${order.id} (${order.customer}): ${orderSum} $`);
+// }
 
 
 
-var TotalInCome = 0
-for (var i = 0; i < orders.length; i++) {
-  var order = orders[i]
+// var TotalInCome = 0
+// for (var i = 0; i < orders.length; i++) {
+//   var order = orders[i]
   
-  for (var j = 0; j < order.items.length; j++) {
-    var item = order.items[j]
-    TotalInCome += item.price * item.quantity
-  }
-}
-console.log("\nСумма дохода = " + TotalInCome + " $ ")
+//   for (var j = 0; j < order.items.length; j++) {
+//     var item = order.items[j]
+//     TotalInCome += item.price * item.quantity
+//   }
+// }
+// console.log("\nСумма дохода = " + TotalInCome + " $ ")
 
 
 
-var maxSum = 0
-var MostExpensive = ""
+// var maxSum = 0
+// var MostExpensive = ""
 
-for (var i = 0; i < orders.length; i++) {
-  var order = orders[i]
-  var orderSum = 0
+// for (var i = 0; i < orders.length; i++) {
+//   var order = orders[i]
+//   var orderSum = 0
   
-  for (var j = 0; j < order.items.length; j++) {
-    var item = order.items[j]
-    orderSum += item.price * item.quantity
-  }
-  if (orderSum > maxSum) {
-    maxSum = orderSum
-    MostExpensive = order.customer
-  }
-}
-console.log("Самый дорогой заказ = " + MostExpensive + " (" + maxSum + " $ )")
+//   for (var j = 0; j < order.items.length; j++) {
+//     var item = order.items[j]
+//     orderSum += item.price * item.quantity
+//   }
+//   if (orderSum > maxSum) {
+//     maxSum = orderSum
+//     MostExpensive = order.customer
+//   }
+// }
+// console.log("Самый дорогой заказ = " + MostExpensive + " (" + maxSum + " $ )")
 
 
 
-//Дополнительное задание:
+// //Дополнительное задание:
 
-console.log("\nВсе проданные товары: ")
-var allProducts = {}
+// console.log("\nВсе проданные товары: ")
+// var allProducts = {}
 
-for (var i = 0; i < orders.length; i++) {
-  var order = orders[i]
+// for (var i = 0; i < orders.length; i++) {
+//   var order = orders[i]
   
-  for (var j = 0; j < order.items.length; j++) {
-    var item = order.items[j]
-    var NameProduct = item.name
-    if (allProducts[NameProduct]) {
-      allProducts[NameProduct] += item.quantity
-    } else {
-      allProducts[NameProduct] = item.quantity
-    }
-  }
-}
-for (var NameProduct in allProducts) {
-  console.log(NameProduct + " = " + allProducts[NameProduct] + " (шт)")
-}
+//   for (var j = 0; j < order.items.length; j++) {
+//     var item = order.items[j]
+//     var NameProduct = item.name
+//     if (allProducts[NameProduct]) {
+//       allProducts[NameProduct] += item.quantity
+//     } else {
+//       allProducts[NameProduct] = item.quantity
+//     }
+//   }
+// }
+// for (var NameProduct in allProducts) {
+//   console.log(NameProduct + " = " + allProducts[NameProduct] + " (шт)")
+// }
 
 
 
-var PopularProduct = ""
-var maxQuantity = 0
+// var PopularProduct = ""
+// var maxQuantity = 0
 
-for (var NameProduct in allProducts) {
-  if (allProducts[NameProduct] > maxQuantity) {
-    maxQuantity = allProducts[NameProduct]
-    PopularProduct = NameProduct
-  }
-}
-console.log("\nСамый популярный товар = " + PopularProduct + " (" + maxQuantity + " (шт))")
+// for (var NameProduct in allProducts) {
+//   if (allProducts[NameProduct] > maxQuantity) {
+//     maxQuantity = allProducts[NameProduct]
+//     PopularProduct = NameProduct
+//   }
+// }
+// console.log("\nСамый популярный товар = " + PopularProduct + " (" + maxQuantity + " (шт))")
 
 
 
