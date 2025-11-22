@@ -1,3 +1,81 @@
+
+// HomeWork_8
+
+
+function findMax(numbers) {
+  let max = numbers[0]
+  
+  for (let i = 1; i < numbers.length; i++) {
+    if (numbers[i] > max) {
+      max = numbers[i]
+    }
+  }
+  
+  return max;
+}
+
+console.log("1. Максимальное число среди этих чисел: [1, 2, 3, 4] = ",
+  findMax([1, 2, 3, 4]))
+console.log("2. Максимальное число среди этих чисел: [390, -5000, 98498] = ",
+  findMax([390, -5000, 98498]))
+console.log("3. Максимальное число среди этих чисел: [21, 22]:", 
+  findMax([21, 22]))
+console.log("4. Максимальное число среди этих чисел: [-19, -983, 738, 777, -34] = ",
+  findMax([-19, -983, 738, 777, -34]))
+console.log("5. Максимальное число среди этих чисел: [-872472, -94892847, -2782] = ",
+  findMax([-872472, -94892847, -2782]))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// lesson_8
+
 // function sayHello(name = "") {
 //   console.log("Hello" + name)
 // }
@@ -66,18 +144,6 @@
 
 
 
-var sum = 0
-
-function calcSum() {
-  sum++
-}
-
-calcSum()
-calcSum()
-calcSum()
-calcSum()
-
-console.log(sum)
 
 
 
